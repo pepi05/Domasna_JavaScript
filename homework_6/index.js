@@ -25,15 +25,21 @@ for (i = 0; i < people.length; i ++) {
         console.log('Smaller than 24 is: ' + people[i].fname)
     }
 }
-
-
 // Find the person with the longest name
+let name = '';
+let dolzina = 0;
+for ( i=0; i < people.length; i++) {
+    if (people[i].fname.length > dolzina) {
+        name = people[i].fname;
+        dolzina = people[i].fname.length;
+    }
+}
+console.log('The longest name is: ' + name);
 
 
 
 
-
- numbers = [1, 4, 24, 67, 1029, 340, 5, 200, 36];
+numbers = [1, 4, 24, 67, 1029, 340, 5, 200, 36];
 // Multiply every element by 3 
 for (let i = 0; i < numbers.length; i++) {
     let result = numbers[i] * 3;
@@ -123,10 +129,15 @@ console.log(brojTotal.length);
 1 2
 1 2 3
 1 2 3 4
-1 2 3 4 5
-*/
+1 2 3 4 5 */
+let t = ' ';
+for (let i=1; i < 6; i++){
+    t += i + ' ';
+    console.log(t);
+}
 
- 
+
+
 
 
 // Write a program to find power of a number.
